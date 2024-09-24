@@ -27,7 +27,21 @@ export const CartContainer = styled.div`
   }
 `
 
-export const AddCartButton = styled.button`
+export const AddCartButton = styled.a`
+  background-color: ${cores.rosa};
+  color: ${cores.vermelho};
+  border: none;
+  padding: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+`
+
+export const SubmitCartButton = styled.button`
   background-color: ${cores.rosa};
   color: ${cores.vermelho};
   border: none;
@@ -100,4 +114,10 @@ export const InfosCart = styled.div`
   color: ${cores.palhaClara};
   weight: 700;
   font-size: 14px;
+`
+export const CartStage = styled.div`
+  display: block;
+  &.is-checkout {
+    display: none;
+  }
 `
