@@ -28,7 +28,7 @@ const Cart = () => {
     if (getTotalPrice() > 0) {
       dispatch(startCheckout())
     } else {
-      alert('Não há itens no carrinho')
+      alert('Não há itens no carrinho!')
     }
   }
 
